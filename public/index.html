@@ -9,13 +9,19 @@
 
   <body>
     <div id="app">
-      <p>{{ greeting }} ({{ greeting.length }})</p>
+      <div>
+        <input type="text" v-model="greeting">
+      </div>
+
+      <div>{{ greeting }} ({{ greeting.length }})</div>
     </div>
 
     <script>
       Vue.createApp({
         data() {
-          return { greeting: "Hello world !" }
+          return {
+            greeting: "Hello world!",
+          }
         },
       }).mount("#app")
     </script>
