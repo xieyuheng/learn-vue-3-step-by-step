@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue 3</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <p>{{ greeting }} ({{ greeting.length }})</p>
+    </div>
+
+    <script>
+      Vue.createApp({
+        data() {
+          return { greeting: "Hello world !" }
+        },
+      }).mount("#app")
+    </script>
+  </body>
+</html>
