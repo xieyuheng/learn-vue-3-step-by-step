@@ -1,4 +1,3 @@
-- Attribute Binding and Event Handling
 - Lists, Conditionals, and Computed Properties
 
 - Your First Custom Vue Component
