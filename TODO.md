@@ -1,5 +1,3 @@
-- Lists, Conditionals, and Computed Properties
-
 - Your First Custom Vue Component
 - One Vue Component Per File
 - Component Props
