@@ -1,4 +1,3 @@
-- Your First Custom Vue Component
 - One Vue Component Per File
 - Component Props
 - Bring it All Together
