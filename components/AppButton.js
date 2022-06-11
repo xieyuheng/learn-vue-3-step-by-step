@@ -7,9 +7,8 @@ export default {
   <slot />
 </button>
 `,
-  data() {
-    return {
-      disabled: false,
-    }
+
+  props: {
+    disabled: Boolean,
   },
 }

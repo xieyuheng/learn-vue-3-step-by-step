@@ -1,4 +1,3 @@
-- Component Props
 - Bring it All Together
 
 - Handle a Form Submission
