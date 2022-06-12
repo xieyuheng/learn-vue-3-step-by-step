@@ -1,30 +1,10 @@
+import AssigmentList from "./AssigmentList.js"
+
 export default {
+  components: { AssigmentList },
   template: `
-      <section v-show="inProgressAssigments.length">
-        <h2 class="font-bold my-2">In Progress</h2>
-
-        <ul>
-          <li v-for="assigment in inProgressAssigments" :key="assigment.id">
-            <label>
-              {{ assigment.name }}
-              <input type="checkbox" v-model="assigment.complete" />
-            </label>
-          </li>
-        </ul>
-      </section>
-
-      <section v-show="completedAssigments.length">
-        <h2 class="font-bold my-2">Completed</h2>
-
-        <ul>
-          <li v-for="assigment in completedAssigments" :key="assigment.id">
-            <label>
-              {{ assigment.name }}
-              <input type="checkbox" v-model="assigment.complete" />
-            </label>
-          </li>
-        </ul>
-      </section>
+    <assigment-list :assigments="inProgressAssigments" title="In Progress"></assigment-list>
+    <assigment-list :assigments="completedAssigments" title="Completed"></assigment-list>
 `,
 
   data() {
