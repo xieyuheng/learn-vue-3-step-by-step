@@ -1,9 +1,7 @@
 import Assigments from "./Assigments.js"
 
 export default {
-  components: {
-    Assigments,
-  },
+  components: { Assigments },
   template: `
     <assigments></assigments>
   `,

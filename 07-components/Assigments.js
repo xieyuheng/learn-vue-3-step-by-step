@@ -5,7 +5,7 @@ export default {
   template: `
     <assigment-list :assigments="inProgressAssigments" title="In Progress"></assigment-list>
     <assigment-list :assigments="completedAssigments" title="Completed"></assigment-list>
-`,
+  `,
 
   data() {
     return {

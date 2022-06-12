@@ -12,7 +12,7 @@ export default {
         </li>
       </ul>
     </section>
-`,
+  `,
 
   props: {
     assigments: Array,
