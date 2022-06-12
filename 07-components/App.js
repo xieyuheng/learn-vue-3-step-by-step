@@ -1,7 +1,10 @@
-import AppButton from "./AppButton.js"
+import Assigments from "./Assigments.js"
 
 export default {
   components: {
-    "app-button": AppButton,
+    Assigments,
   },
+  template: `
+    <assigments></assigments>
+  `,
 }
