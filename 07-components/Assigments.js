@@ -2,9 +2,10 @@ import AssigmentList from "./AssigmentList.js"
 
 export default {
   components: { AssigmentList },
+
   template: `
-    <assigment-list :assigments="inProgressAssigments" title="In Progress"></assigment-list>
-    <assigment-list :assigments="completedAssigments" title="Completed"></assigment-list>
+    <assigment-list :assigments="filters.inProgress" title="In Progress"></assigment-list>
+    <assigment-list :assigments="filters.completed" title="Completed"></assigment-list>
   `,
 
   data() {
@@ -18,12 +19,11 @@ export default {
   },
 
   computed: {
-    completedAssigments() {
-      return this.assigments.filter((assigment) => assigment.complete)
-    },
-
-    inProgressAssigments() {
-      return this.assigments.filter((assigment) => !assigment.complete)
+    filters() {
+      return {
+        inProgress: this.assigments.filter((assigment) => assigment.complete),
+        completed: this.assigments.filter((assigment) => !assigment.complete),
+      }
     },
   },
 }
