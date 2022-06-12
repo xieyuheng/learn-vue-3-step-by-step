@@ -11,3 +11,8 @@
 - Named Slots
 
 - Vite
+- Little Confusing Things
+
+- 18 Two Mental Leaps to Script Setup
+- 19 From Mixins to Composables
+- 20 Composable Example: Local Storage
