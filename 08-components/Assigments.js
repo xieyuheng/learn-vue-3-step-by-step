@@ -6,6 +6,13 @@ export default {
   template: `
     <assigment-list :assigments="filters.inProgress" title="In Progress"></assigment-list>
     <assigment-list :assigments="filters.completed" title="Completed"></assigment-list>
+
+    <form class="my-3" @submit.prevent="add()">
+      <div class="border-2 border-gray-600">
+        <input class="p-2" placeholder="New assigment ..." name="" type="text" value=""/>
+        <button class="p-2 border-l-2 border-gray-600" type="submit">Add</button>
+      </div>
+    </form>
   `,
 
   data() {
@@ -26,4 +33,10 @@ export default {
       }
     },
   },
+
+  methods: {
+    add() {
+      alert("hi there")
+    }
+  }
 }
