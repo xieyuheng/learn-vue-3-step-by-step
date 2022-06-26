@@ -1,5 +1,3 @@
-- Parent-Child State Communication
-
 - It's All So Easy
 - Component Responsibility
 - A Deeper Look at V-Model
