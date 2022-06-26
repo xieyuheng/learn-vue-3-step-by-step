@@ -1,4 +1,3 @@
-- Handle a Form Submission
 - Parent-Child State Communication
 
 - It's All So Easy
