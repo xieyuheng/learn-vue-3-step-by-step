@@ -50,12 +50,11 @@
         },
 
         computed: {
-          completedAssigments() {
-            return this.assigments.filter((assigment) => assigment.complete)
-          },
-
           inProgressAssigments() {
             return this.assigments.filter((assigment) => !assigment.complete)
+          },
+          completedAssigments() {
+            return this.assigments.filter((assigment) => assigment.complete)
           },
         },
       }

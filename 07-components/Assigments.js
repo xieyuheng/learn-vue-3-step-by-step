@@ -21,8 +21,8 @@ export default {
   computed: {
     filters() {
       return {
-        inProgress: this.assigments.filter((assigment) => assigment.complete),
-        completed: this.assigments.filter((assigment) => !assigment.complete),
+        inProgress: this.assigments.filter((assigment) => !assigment.complete),
+        completed: this.assigments.filter((assigment) => assigment.complete),
       }
     },
   },

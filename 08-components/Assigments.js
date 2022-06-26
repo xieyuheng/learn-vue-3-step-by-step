@@ -9,7 +9,7 @@ export default {
 
     <form class="my-3" @submit.prevent="add()">
       <div class="border-2 border-gray-600">
-        <input class="p-2" placeholder="New assigment ..." name="" type="text" value=""/>
+        <input v-model="newAssigment" class="p-2" placeholder="New assigment ..." type="text" />
         <button class="p-2 border-l-2 border-gray-600" type="submit">Add</button>
       </div>
     </form>
@@ -22,21 +22,28 @@ export default {
         { name: "Read chapter 4", complete: false, id: 2 },
         { name: "Turn in homework", complete: false, id: 3 },
       ],
+      newAssigment: '',
     }
   },
 
   computed: {
     filters() {
       return {
-        inProgress: this.assigments.filter((assigment) => assigment.complete),
-        completed: this.assigments.filter((assigment) => !assigment.complete),
+        inProgress: this.assigments.filter((assigment) => !assigment.complete),
+        completed: this.assigments.filter((assigment) => assigment.complete),
       }
     },
   },
 
   methods: {
     add() {
-      alert("hi there")
+      this.assigments.push({
+        name: this.newAssigment,
+        complete: false,
+        id: this.assigments.length,
+      })
+
+      this.newAssigment = ''
     }
   }
 }
