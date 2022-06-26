@@ -1,4 +1,3 @@
-- It's All So Easy
 - Component Responsibility
 - A Deeper Look at V-Model
 - Lifecycle Hooks, Fake APIs, and AJAX
