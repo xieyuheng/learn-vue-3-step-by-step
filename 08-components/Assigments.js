@@ -22,7 +22,7 @@ export default {
         { name: "Read chapter 4", complete: false, id: 2 },
         { name: "Turn in homework", complete: false, id: 3 },
       ],
-      newAssigment: '',
+      newAssigment: "",
     }
   },
 
@@ -37,13 +37,17 @@ export default {
 
   methods: {
     add() {
+      if (this.newAssigment.trim() === "") {
+        return
+      }
+
       this.assigments.push({
         name: this.newAssigment,
         complete: false,
         id: this.assigments.length,
       })
 
-      this.newAssigment = ''
-    }
-  }
+      this.newAssigment = ""
+    },
+  },
 }
